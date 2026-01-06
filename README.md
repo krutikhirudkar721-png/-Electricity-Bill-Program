@@ -1,4 +1,5 @@
 # -Electricity-Bill-Program
+# -Basic Electric Bill Program
 units = int(input("Enter electricity units consumed: "))
 
 if units <= 100:

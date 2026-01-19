@@ -1,5 +1,5 @@
 # -Electricity-Bill-Program
-
+# BASIC
 units = int(input("Enter electricity units consumed: "))
 if units <= 100:
     bill = 0
@@ -12,3 +12,4 @@ elif units>=301 and units<=500:
 else:
     bill = (100*5)+(100*7)+(units-300)*10
 print("Electricity Bill:", bill)
+

@@ -1,17 +1,19 @@
 # -Electricity-Bill-Program
 # BASIC
+# Electricity Bill Calculator
+# Logic: 1-100 (Free), 101-200 (5/unit), 201-300 (7/unit), 300+ (10/unit)
+
 units = int(input("Enter electricity units consumed: "))
 if units <= 100:
     bill = 0
-elif units > 100 and units < 200:
+elif units <= 200:
     bill = (units - 100) * 5
-elif units>=201 and units<=300:
-    bill=(units - 201) * 7
-elif units>=301 and units<=500:
-    bill=(units - 301) *10
+elif units <= 300:
+    bill = (100 * 5) + (units - 200) * 7
 else:
-    bill = (100*5)+(100*7)+(units-300)*10
-print("Electricity Bill:", bill)
+    bill = (100 * 5) + (100 * 7) + (units - 300) * 10
+print(f"Total Electricity Bill: {bill}")
+
 
 
 # Advance

@@ -2,27 +2,27 @@
 # Electricity Bill Calculator
 # Logic: 1-100 (Free), 101-200 (5/unit), 201-300 (7/unit), 300+ (10/unit)
 # BASIC
-units = int(input("Enter electricity units consumed: "))
-<br>
-if units <= 100:
+    units = int(input("Enter electricity units consumed: "))
+    <br>
+    if units <= 100:
     bill = 0
-<br>
-elif units <= 200:
+    <br>
+    elif units <= 200:
     bill = (units - 100) * 5
-<br>
-elif units <= 300:
+    <br>
+    elif units <= 300:
     bill = (100 * 5) + (units - 200) * 7
-<br>
-else:
+    <br>
+    else:
     bill = (100 * 5) + (100 * 7) + (units - 300) * 10
-<br>
-print(f"Total Electricity Bill: {bill}")
+    <br>
+    print(f"Total Electricity Bill: {bill}")
 
 
 
 # Advance
 
-def calculate_electricity_bill(units: int) -> float:
+    def calculate_electricity_bill(units: int) -> float:
     """
     Calculates cumulative electricity bill based on unit slabs.
     Slabs:
@@ -49,7 +49,7 @@ def calculate_electricity_bill(units: int) -> float:
         
     return bill
 
-def main():
+    def main():
     try:
         units_input = input("Enter electricity units consumed: ")
         units = int(units_input)
@@ -62,6 +62,6 @@ def main():
     except ValueError as e:
         print(f"Error: Invalid input. {e}")
 
-if __name__ == "__main__":
+    if __name__ == "__main__":
     main()
 

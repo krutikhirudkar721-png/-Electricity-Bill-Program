@@ -3,14 +3,19 @@
 # Logic: 1-100 (Free), 101-200 (5/unit), 201-300 (7/unit), 300+ (10/unit)
 # BASIC
 units = int(input("Enter electricity units consumed: "))
+<br>
 if units <= 100:
     bill = 0
+<br>
 elif units <= 200:
     bill = (units - 100) * 5
+<br>
 elif units <= 300:
     bill = (100 * 5) + (units - 200) * 7
+<br>
 else:
     bill = (100 * 5) + (100 * 7) + (units - 300) * 10
+<br>
 print(f"Total Electricity Bill: {bill}")
 
 

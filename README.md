@@ -1,5 +1,4 @@
 # -Electricity-Bill-Program
-# Electricity Bill Calculator
 # Logic: 1-100 (Free), 101-200 (5/unit), 201-300 (7/unit), 300+ (10/unit)
 # BASIC
     units = int(input("Enter electricity units consumed: "))

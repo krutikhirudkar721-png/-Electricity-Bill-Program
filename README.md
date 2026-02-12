@@ -20,7 +20,6 @@
 
 
 # Advance
-
     def calculate_electricity_bill(units: int) -> float:
     """
     Calculates cumulative electricity bill based on unit slabs.

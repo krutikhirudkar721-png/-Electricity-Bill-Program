@@ -17,7 +17,6 @@
     bill = (100 * 5) + (100 * 7) + (units - 300) * 10
     <br>
     print(f"Total Electricity Bill: {bill}")
-
 # Advance
 
     def calculate_electricity_bill(units: int) -> float:

@@ -39,7 +39,6 @@
         # 100 units at 0 + 100 units at 5 + current slab
         bill = (100 * 5) + (units - 200) * 7
     else:
-        
         # 100 units at 0 + 100 units at 5 + 100 units at 7 + current slab
         bill = (100 * 5) + (100 * 7) + (units - 300) * 10
     return bill

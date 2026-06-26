@@ -15,7 +15,6 @@ else:
 print("Total Bill: ₹", bill)
 
 # Advance
-
     def calculate_electricity_bill(units):
     if units < 0:
         raise ValueError("Units cannot be negative.")

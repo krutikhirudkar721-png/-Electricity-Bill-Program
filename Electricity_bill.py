@@ -39,5 +39,6 @@ try:
     print("Units Consumed:", units)
     print(f"Total Amount: ₹{total_bill:.2f}")
 
+
 except ValueError as e:
     print("Error:", e)

@@ -19,6 +19,7 @@ print("Total Bill: ₹", bill)
         raise ValueError("Units cannot be negative.")
     bill = 0
 
+
     if units > 300:
         bill += (units - 300) * 10
         units = 300
